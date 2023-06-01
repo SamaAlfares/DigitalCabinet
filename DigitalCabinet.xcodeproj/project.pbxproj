@@ -1,0 +1,595 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		841DE3A629E9F7CE003608D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841DE3A529E9F7CE003608D6 /* AppDelegate.swift */; };
+		841DE3A829E9F7CE003608D6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841DE3A729E9F7CE003608D6 /* SceneDelegate.swift */; };
+		841DE3AA29E9F7CE003608D6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841DE3A929E9F7CE003608D6 /* LoginViewController.swift */; };
+		841DE3AD29E9F7CE003608D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 841DE3AB29E9F7CE003608D6 /* Main.storyboard */; };
+		841DE3AF29E9F7D0003608D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 841DE3AE29E9F7D0003608D6 /* Assets.xcassets */; };
+		841DE3B229E9F7D0003608D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 841DE3B029E9F7D0003608D6 /* LaunchScreen.storyboard */; };
+		845B58EB29F49993008C7FE7 /* GroceriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845B58EA29F49993008C7FE7 /* GroceriesViewController.swift */; };
+		8460EC4E2A26821C0082C35B /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 8460EC4D2A26821C0082C35B /* FirebaseAuth */; };
+		8460EC502A26821C0082C35B /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 8460EC4F2A26821C0082C35B /* FirebaseDatabase */; };
+		8460EC522A26821C0082C35B /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 8460EC512A26821C0082C35B /* FirebaseFirestore */; };
+		8460EC542A26821C0082C35B /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 8460EC532A26821C0082C35B /* FirebaseStorage */; };
+		848711622A1D246D000FA296 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848711612A1D246D000FA296 /* Item.swift */; };
+		8497DB862A293BA200B08433 /* SwipeCellKit in Frameworks */ = {isa = PBXBuildFile; productRef = 8497DB852A293BA200B08433 /* SwipeCellKit */; };
+		84A9D96229EC52D500259E5E /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A9D96129EC52D500259E5E /* RegisterViewController.swift */; };
+		84AA94B92A1BC9B500E0B183 /* SwipeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AA94B82A1BC9B500E0B183 /* SwipeTableViewController.swift */; };
+		84C19A422A27DB5100C61C0C /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C19A412A27DB5100C61C0C /* CameraViewController.swift */; };
+		84C19A452A27E5EE00C61C0C /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 84C19A442A27E5EE00C61C0C /* SDWebImage */; };
+		84C19A472A27E5EE00C61C0C /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 84C19A462A27E5EE00C61C0C /* SDWebImageMapKit */; };
+		84C19A4F2A28FCF100C61C0C /* DiginetClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 84C19A4E2A28FCF100C61C0C /* DiginetClassifier.mlmodel */; };
+		84C67D292A1E62030002403E /* ItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C67D282A1E62030002403E /* ItemCollectionViewCell.swift */; };
+		84D73FC029EFD4A30025D24A /* Cabinet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D73FBF29EFD4A30025D24A /* Cabinet.swift */; };
+		84E4508929ECC20500A6849C /* CabinetsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E4508829ECC20500A6849C /* CabinetsViewController.swift */; };
+		84E4508C29ED893400A6849C /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 84E4508B29ED893400A6849C /* IQKeyboardManagerSwift */; };
+		84E4509529EDF12800A6849C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E4509429EDF12800A6849C /* Constants.swift */; };
+		84E4509729EDFBE400A6849C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84E4509629EDFBE300A6849C /* GoogleService-Info.plist */; };
+		A8991EC39973A9FB6155D5D3 /* libPods-DigitalCabinet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C2766EF8F06B32CDFD12674 /* libPods-DigitalCabinet.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		316596727008D568B40DCA0D /* Pods-DigitalCabinet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DigitalCabinet.release.xcconfig"; path = "Target Support Files/Pods-DigitalCabinet/Pods-DigitalCabinet.release.xcconfig"; sourceTree = "<group>"; };
+		34E960B3AE98401CC0D78C56 /* Pods-DigitalCabinet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DigitalCabinet.debug.xcconfig"; path = "Target Support Files/Pods-DigitalCabinet/Pods-DigitalCabinet.debug.xcconfig"; sourceTree = "<group>"; };
+		5C2766EF8F06B32CDFD12674 /* libPods-DigitalCabinet.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DigitalCabinet.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		841DE3A229E9F7CE003608D6 /* DigitalCabinet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DigitalCabinet.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		841DE3A529E9F7CE003608D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		841DE3A729E9F7CE003608D6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		841DE3A929E9F7CE003608D6 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		841DE3AC29E9F7CE003608D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		841DE3AE29E9F7D0003608D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		841DE3B129E9F7D0003608D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		841DE3B329E9F7D0003608D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		845B58EA29F49993008C7FE7 /* GroceriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceriesViewController.swift; sourceTree = "<group>"; };
+		848711612A1D246D000FA296 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		84A9D96129EC52D500259E5E /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		84AA94B82A1BC9B500E0B183 /* SwipeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeTableViewController.swift; sourceTree = "<group>"; };
+		84C19A412A27DB5100C61C0C /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		84C19A4E2A28FCF100C61C0C /* DiginetClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = DiginetClassifier.mlmodel; sourceTree = "<group>"; };
+		84C67D282A1E62030002403E /* ItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCollectionViewCell.swift; sourceTree = "<group>"; };
+		84D73FBF29EFD4A30025D24A /* Cabinet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cabinet.swift; sourceTree = "<group>"; };
+		84E4508829ECC20500A6849C /* CabinetsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CabinetsViewController.swift; sourceTree = "<group>"; };
+		84E4509429EDF12800A6849C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		84E4509629EDFBE300A6849C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		841DE39F29E9F7CE003608D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84E4508C29ED893400A6849C /* IQKeyboardManagerSwift in Frameworks */,
+				8460EC4E2A26821C0082C35B /* FirebaseAuth in Frameworks */,
+				8460EC502A26821C0082C35B /* FirebaseDatabase in Frameworks */,
+				84C19A452A27E5EE00C61C0C /* SDWebImage in Frameworks */,
+				8460EC522A26821C0082C35B /* FirebaseFirestore in Frameworks */,
+				84C19A472A27E5EE00C61C0C /* SDWebImageMapKit in Frameworks */,
+				8497DB862A293BA200B08433 /* SwipeCellKit in Frameworks */,
+				8460EC542A26821C0082C35B /* FirebaseStorage in Frameworks */,
+				A8991EC39973A9FB6155D5D3 /* libPods-DigitalCabinet.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2988909DB38F265750E15909 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				34E960B3AE98401CC0D78C56 /* Pods-DigitalCabinet.debug.xcconfig */,
+				316596727008D568B40DCA0D /* Pods-DigitalCabinet.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		841DE39929E9F7CE003608D6 = {
+			isa = PBXGroup;
+			children = (
+				841DE3A429E9F7CE003608D6 /* DigitalCabinet */,
+				841DE3A329E9F7CE003608D6 /* Products */,
+				84C19A4E2A28FCF100C61C0C /* DiginetClassifier.mlmodel */,
+				2988909DB38F265750E15909 /* Pods */,
+				B857213A262E18283CE25EC3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		841DE3A329E9F7CE003608D6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				841DE3A229E9F7CE003608D6 /* DigitalCabinet.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		841DE3A429E9F7CE003608D6 /* DigitalCabinet */ = {
+			isa = PBXGroup;
+			children = (
+				841DE3BC29E9F7F7003608D6 /* Views */,
+				841DE3BB29E9F7F1003608D6 /* Controllers */,
+				841DE3B929E9F7E2003608D6 /* Models */,
+				841DE3A529E9F7CE003608D6 /* AppDelegate.swift */,
+				841DE3A729E9F7CE003608D6 /* SceneDelegate.swift */,
+				841DE3AE29E9F7D0003608D6 /* Assets.xcassets */,
+				841DE3B029E9F7D0003608D6 /* LaunchScreen.storyboard */,
+				841DE3B329E9F7D0003608D6 /* Info.plist */,
+				84E4509629EDFBE300A6849C /* GoogleService-Info.plist */,
+				84E4509429EDF12800A6849C /* Constants.swift */,
+			);
+			path = DigitalCabinet;
+			sourceTree = "<group>";
+		};
+		841DE3B929E9F7E2003608D6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				84D73FBF29EFD4A30025D24A /* Cabinet.swift */,
+				848711612A1D246D000FA296 /* Item.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		841DE3BB29E9F7F1003608D6 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				841DE3A929E9F7CE003608D6 /* LoginViewController.swift */,
+				84A9D96129EC52D500259E5E /* RegisterViewController.swift */,
+				84E4508829ECC20500A6849C /* CabinetsViewController.swift */,
+				845B58EA29F49993008C7FE7 /* GroceriesViewController.swift */,
+				84AA94B82A1BC9B500E0B183 /* SwipeTableViewController.swift */,
+				84C67D282A1E62030002403E /* ItemCollectionViewCell.swift */,
+				84C19A412A27DB5100C61C0C /* CameraViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		841DE3BC29E9F7F7003608D6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				841DE3AB29E9F7CE003608D6 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B857213A262E18283CE25EC3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5C2766EF8F06B32CDFD12674 /* libPods-DigitalCabinet.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		841DE3A129E9F7CE003608D6 /* DigitalCabinet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 841DE3B629E9F7D0003608D6 /* Build configuration list for PBXNativeTarget "DigitalCabinet" */;
+			buildPhases = (
+				A4EFD81106ED1E84997456D8 /* [CP] Check Pods Manifest.lock */,
+				841DE39E29E9F7CE003608D6 /* Sources */,
+				841DE39F29E9F7CE003608D6 /* Frameworks */,
+				841DE3A029E9F7CE003608D6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DigitalCabinet;
+			packageProductDependencies = (
+				84E4508B29ED893400A6849C /* IQKeyboardManagerSwift */,
+				8460EC4D2A26821C0082C35B /* FirebaseAuth */,
+				8460EC4F2A26821C0082C35B /* FirebaseDatabase */,
+				8460EC512A26821C0082C35B /* FirebaseFirestore */,
+				8460EC532A26821C0082C35B /* FirebaseStorage */,
+				84C19A442A27E5EE00C61C0C /* SDWebImage */,
+				84C19A462A27E5EE00C61C0C /* SDWebImageMapKit */,
+				8497DB852A293BA200B08433 /* SwipeCellKit */,
+			);
+			productName = DigitalCabinet;
+			productReference = 841DE3A229E9F7CE003608D6 /* DigitalCabinet.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		841DE39A29E9F7CE003608D6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					841DE3A129E9F7CE003608D6 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = 841DE39D29E9F7CE003608D6 /* Build configuration list for PBXProject "DigitalCabinet" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 841DE39929E9F7CE003608D6;
+			packageReferences = (
+				84E4508A29ED893400A6849C /* XCRemoteSwiftPackageReference "IQKeyboardManager.git" */,
+				8460EC4C2A26821C0082C35B /* XCRemoteSwiftPackageReference "firebase-ios-sdk.git" */,
+				84C19A432A27E5EE00C61C0C /* XCRemoteSwiftPackageReference "SDWebImage.git" */,
+				8497DB842A293BA200B08433 /* XCRemoteSwiftPackageReference "SwipeCellKit" */,
+			);
+			productRefGroup = 841DE3A329E9F7CE003608D6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				841DE3A129E9F7CE003608D6 /* DigitalCabinet */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		841DE3A029E9F7CE003608D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				841DE3B229E9F7D0003608D6 /* LaunchScreen.storyboard in Resources */,
+				84E4509729EDFBE400A6849C /* GoogleService-Info.plist in Resources */,
+				841DE3AF29E9F7D0003608D6 /* Assets.xcassets in Resources */,
+				841DE3AD29E9F7CE003608D6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A4EFD81106ED1E84997456D8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DigitalCabinet-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		841DE39E29E9F7CE003608D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				841DE3AA29E9F7CE003608D6 /* LoginViewController.swift in Sources */,
+				84C67D292A1E62030002403E /* ItemCollectionViewCell.swift in Sources */,
+				841DE3A629E9F7CE003608D6 /* AppDelegate.swift in Sources */,
+				84C19A4F2A28FCF100C61C0C /* DiginetClassifier.mlmodel in Sources */,
+				845B58EB29F49993008C7FE7 /* GroceriesViewController.swift in Sources */,
+				841DE3A829E9F7CE003608D6 /* SceneDelegate.swift in Sources */,
+				84AA94B92A1BC9B500E0B183 /* SwipeTableViewController.swift in Sources */,
+				848711622A1D246D000FA296 /* Item.swift in Sources */,
+				84D73FC029EFD4A30025D24A /* Cabinet.swift in Sources */,
+				84A9D96229EC52D500259E5E /* RegisterViewController.swift in Sources */,
+				84C19A422A27DB5100C61C0C /* CameraViewController.swift in Sources */,
+				84E4508929ECC20500A6849C /* CabinetsViewController.swift in Sources */,
+				84E4509529EDF12800A6849C /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		841DE3AB29E9F7CE003608D6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				841DE3AC29E9F7CE003608D6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		841DE3B029E9F7D0003608D6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				841DE3B129E9F7D0003608D6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		841DE3B429E9F7D0003608D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		841DE3B529E9F7D0003608D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		841DE3B729E9F7D0003608D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 34E960B3AE98401CC0D78C56 /* Pods-DigitalCabinet.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4YQD76XW2K;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DigitalCabinet/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sama.DigitalCabinet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		841DE3B829E9F7D0003608D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 316596727008D568B40DCA0D /* Pods-DigitalCabinet.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4YQD76XW2K;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DigitalCabinet/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sama.DigitalCabinet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		841DE39D29E9F7CE003608D6 /* Build configuration list for PBXProject "DigitalCabinet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				841DE3B429E9F7D0003608D6 /* Debug */,
+				841DE3B529E9F7D0003608D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		841DE3B629E9F7D0003608D6 /* Build configuration list for PBXNativeTarget "DigitalCabinet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				841DE3B729E9F7D0003608D6 /* Debug */,
+				841DE3B829E9F7D0003608D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8460EC4C2A26821C0082C35B /* XCRemoteSwiftPackageReference "firebase-ios-sdk.git" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		8497DB842A293BA200B08433 /* XCRemoteSwiftPackageReference "SwipeCellKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwipeCellKit/SwipeCellKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+		84C19A432A27E5EE00C61C0C /* XCRemoteSwiftPackageReference "SDWebImage.git" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		84E4508A29ED893400A6849C /* XCRemoteSwiftPackageReference "IQKeyboardManager.git" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8460EC4D2A26821C0082C35B /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8460EC4C2A26821C0082C35B /* XCRemoteSwiftPackageReference "firebase-ios-sdk.git" */;
+			productName = FirebaseAuth;
+		};
+		8460EC4F2A26821C0082C35B /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8460EC4C2A26821C0082C35B /* XCRemoteSwiftPackageReference "firebase-ios-sdk.git" */;
+			productName = FirebaseDatabase;
+		};
+		8460EC512A26821C0082C35B /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8460EC4C2A26821C0082C35B /* XCRemoteSwiftPackageReference "firebase-ios-sdk.git" */;
+			productName = FirebaseFirestore;
+		};
+		8460EC532A26821C0082C35B /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8460EC4C2A26821C0082C35B /* XCRemoteSwiftPackageReference "firebase-ios-sdk.git" */;
+			productName = FirebaseStorage;
+		};
+		8497DB852A293BA200B08433 /* SwipeCellKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8497DB842A293BA200B08433 /* XCRemoteSwiftPackageReference "SwipeCellKit" */;
+			productName = SwipeCellKit;
+		};
+		84C19A442A27E5EE00C61C0C /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 84C19A432A27E5EE00C61C0C /* XCRemoteSwiftPackageReference "SDWebImage.git" */;
+			productName = SDWebImage;
+		};
+		84C19A462A27E5EE00C61C0C /* SDWebImageMapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 84C19A432A27E5EE00C61C0C /* XCRemoteSwiftPackageReference "SDWebImage.git" */;
+			productName = SDWebImageMapKit;
+		};
+		84E4508B29ED893400A6849C /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 84E4508A29ED893400A6849C /* XCRemoteSwiftPackageReference "IQKeyboardManager.git" */;
+			productName = IQKeyboardManagerSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 841DE39A29E9F7CE003608D6 /* Project object */;
+}
